@@ -1,0 +1,119 @@
+:root {
+  --bg: #fbfbfd;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --line: #e5e7eb;
+  --accent: #5b21b6; /* deep plum */
+  --accent-soft: rgba(91, 33, 182, 0.10);
+  --max: 920px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.55;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+main {
+  max-width: var(--max);
+  margin: 28px auto;
+  padding: 28px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(251, 251, 253, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+h3 { margin: 18px 0 6px 0; font-size: 16px; }
+
+p { margin: 10px 0; color: var(--text); }
+ul { margin: 8px 0 0 0; padding-left: 18px; }
+li { margin: 6px 0; }
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.contact a:hover {
+  text-decoration: none;
+}
+
+.contact a.primary {
+  border-color: transparent;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.section-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 14px;
+  font-size: 1.05rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.stack {
+  color: var(--muted);
+  font-size: 0.85em;
+  margin-top: 6px;
+}
+
+.section-card h3 {
+  font-size: 1.05em;
+}
+
+@media print {
+  header { position: static; border-bottom: none; }
+  main { margin: 0; padding: 0; }
+  .section-card { border: none; padding: 0; }
+  .contact a { border: none; padding: 0; background: transparent; }
+  a { color: var(--text); text-decoration: none; }
+}
