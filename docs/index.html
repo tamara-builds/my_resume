@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tamara Dowis | Software Engineer</title>
+    <meta name="description" content="Tamara Dowis resume. Backend, data pipelines, CI/CD." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="page" aria-label="Resume">
+      <header class="header">
+        <div>
+          <h1 class="name">Tamara Dowis</h1>
+          <p class="headline">Backend software engineer focused on data pipelines, civic tech, and reliable APIs</p>
+        </div>
+
+        <div class="contact" aria-label="Contact links">
+          <a href="mailto:tamara.dowis@gmail.com">tamara.dowis@gmail.com</a>
+          <a href="https://github.com/tamara-builds" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/tamara-dowis/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="primary" href="./TamaraDowis_Resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+        </div>
+      </header>
+
+      <section class="section" aria-label="Summary">
+        <h2>Summary</h2>
+        <p>
+          I’m the person who lights up when something breaks, because it’s an opportunity to learn and
+          figure out how to fix something new. Before learning to code, I worked around the world in
+          roles that taught me to listen closely, adapt quickly, and understand how systems behave in
+          the real world. I taught science in Mexico and China and supported community programs in
+          India and Kenya. I currently contribute to civic tech projects, develop pipelines and APIs
+          that transform unstructured data into clean, usable formats, and build backend systems in
+          Python, TypeScript, and Ruby.
+        </p>
+      </section>
+
+      <section class="section" aria-label="Technical Skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills">
+          <li><span class="label">Languages:</span> Python, TypeScript, Ruby, JavaScript</li>
+          <li><span class="label">Tooling:</span> Git, Postman, Swagger, Jira, Confluence</li>
+          <li><span class="label">Testing:</span> RSpec, Jest, Capybara</li>
+          <li><span class="label">AI-Integrated Development:</span> design, debugging, iteration</li>
+          <li><span class="label">Caching and Performance:</span> Redis, node-cache, pagination, analytics queries</li>
+          <li><span class="label">Data and Databases:</span> PostgreSQL, SQL, relational data modeling, ETL patterns</li>
+          <li><span class="label">Backend and APIs:</span> Node.js, Express, Ruby on Rails, REST API design, authentication</li>
+          <li><span class="label">DevOps and Automation:</span> Docker, GitHub Actions, CI pipelines, structured logging, monitoring basics</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-label="Projects">
+        <h2>Projects</h2>
+
+        <article class="item">
+          <div class="section-card">
+            <h3>govbot (Windy Civi Toolkit, Open States scrapers, data pipelines)</h3>
+            <p class="stack">Python · GitHub Actions · Docker · JSON · ETL · Structured Logging · Data Validation</p>
+          </div>
+          <p class="blurb">
+            Open-source tooling that addresses a core civic data problem: legislative data is fragmented,
+            difficult to track over time, and often dependent on centralized platforms that may be shut
+            down or abandoned.
+          </p>
+          <ul>
+            <li>Built automated pipelines transforming federal and state legislative data into standardized, append-only JSON artifacts for long term analysis without reliance on a single hosted service.</li>
+            <li>Designed workflows around reproducibility and decentralization using timestamped artifacts, structured logs, and deterministic runs so datasets can be independently cloned, verified, and queried by others.</li>
+            <li>Standardized ETL patterns across jurisdictions and sessions, reducing duplicated effort for civic groups, researchers, and educators who lack resources to maintain custom data infrastructure.</li>
+            <li>Implemented Dockerized runs and GitHub Actions schedules to support transparent, repeatable updates and lower the barrier for contributors.</li>
+            <li>Collaborated with civic technologists to refine data structures and tooling to support analytics, tagging, and public-facing use.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="section-card">
+            <h3>SciScope</h3>
+            <p class="stack">Node.js · Express · PostgreSQL · Objection.js · Redis · Jest · Winston · Passport · JWT · node-cache</p>
+          </div>
+          <p class="blurb">A scalable RESTful API for science news aggregation with user authentication, caching, and analytics.</p>
+          <ul>
+            <li>Architected RESTful API with Express and PostgreSQL, using a modular service architecture and external API integration patterns.</li>
+            <li>Designed relational schema and implemented advanced SQL queries with Objection.js, including pagination and analytics.</li>
+            <li>Implemented secure authentication and authorization with Passport and JWT, including session management and role-based access controls.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="section-card">
+            <h3>Adventure Life REST API</h3>
+            <p class="stack">Node.js · TypeScript · Express · PostgreSQL · Knex · Objection.js · Postman · Jest · Swagger</p>
+          </div>
+          <p class="blurb">REST API exposing structured, relational city data via modular, testable endpoints.</p>
+          <ul>
+            <li>Built RESTful API with TypeScript and Express, applying the DAO pattern and modular service design to refactor a legacy codebase.</li>
+            <li>Modeled complex city relationships using PostgreSQL and Objection.js, optimizing queries for fast and reliable data access.</li>
+            <li>Wrote Swagger documentation and a Jest test suite to ensure endpoint accuracy and support long-term developer usability.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" aria-label="Experience">
+        <h2>Highlighted Professional Experience</h2>
+
+        <article class="item">
+          <div class="item-header split">
+            <h3>Science Educator | International &amp; U.S. Schools</h3>
+            <p class="meta">07/2016 - Present</p>
+          </div>
+          <ul>
+            <li>Designed and delivered inclusive science curricula in IB and project-based environments in Mexico, China, and the U.S., helping students build analytical thinking and real-world problem-solving skills.</li>
+            <li>Analyzed student performance data, tested instructional approaches, and iterated on materials based on outcomes, mirroring feedback-driven development cycles.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header split">
+            <h3>Project Manager | SolarAid</h3>
+            <p class="meta">07/2008 - 06/2009</p>
+          </div>
+          <ul>
+            <li>Led a solar energy initiative that distributed over 500,000 lights across Kenya, improving daily life for more than 2 million people.</li>
+            <li>Managed a 28-person team across franchise operations and a local manufacturing plant, overseeing planning, logistics, and reporting.</li>
+            <li>Worked directly with local communities to understand constraints, translate needs into workable plans, and build systems that supported reliable delivery and long-term adoption.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" aria-label="Education and Certifications">
+        <h2>Education &amp; Certifications</h2>
+        <ul class="edu">
+          <li><span class="label">AWS Certified Cloud Practitioner</span> | Amazon Web Services <span class="meta">07/2025</span></li>
+          <li><span class="label">Back End Engineering Certificate</span> | Turing School of Software Design <span class="meta">06/2022</span></li>
+          <li><span class="label">Bachelor of Science with Honors in Biology Ed</span> | Kennesaw State University <span class="meta">05/2015</span></li>
+        </ul>
+      </section>
+
+    </main>
+  </body>
+</html>
