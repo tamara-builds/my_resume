@@ -32,14 +32,14 @@
       <section class="section" aria-label="Summary">
         <h2>Summary</h2>
         <p>
-          Software engineer who builds backend systems, APIs, and data pipelines in Python,
-          TypeScript, and Ruby. I like working close to the mechanics of a system, especially
-          when something breaks and I need to trace it back to the underlying behavior. I’m
-          comfortable owning work from early exploration through implementation, including design
-          tradeoffs, testing, and iteration as requirements evolve. Before software, I worked
-          internationally in education and community programs, which shaped how I collaborate,
-          communicate, and design systems that hold up under real-world constraints and evolving
-          business needs.
+          Software engineer who builds backend systems, APIs, and data pipelines in Python, TypeScript,
+          and Ruby. I like working close to the mechanics of a system, especially when something breaks
+          and I need to trace it back to the underlying behavior. I work closely with others from early
+          exploration through implementation, contributing to design tradeoffs, testing, and iteration as
+          requirements evolve. I care about whether the systems I build actually help people make sense
+          of complex, real-world data and hold up under real-world constraints. Before software, I
+          worked internationally in education and community programs, including civic and public-interest
+          contexts, which shaped how I collaborate, communicate, and design with judgment rather than ego.
         </p>
       </section>
 
@@ -48,17 +48,23 @@
         <ul class="skills">
           <li><span class="label">Languages:</span> Python, TypeScript, Ruby, JavaScript</li>
           <li><span class="label">Tooling:</span> Git, Postman, Swagger, Jira, Confluence</li>
-          <li><span class="label">Testing:</span> RSpec, Jest, Capybara</li>
-          <li><span class="label">Development Practices:</span> TDD, debugging, iterative design</li>
+          <li><span class="label">Backend and APIs:</span> Node.js, Express, Ruby on Rails, REST API design, authentication, testing with RSpec and Jest</li>
+          <li><span class="label">Testing:</span> Capybara</li>
           <li>
             <span class="label">Caching and Performance:</span> Redis, node-cache, pagination,
             analytics queries
           </li>
-          <li><span class="label">Backend and APIs:</span> Node.js, Express, Ruby on Rails, REST API design, authentication</li>
-          <li><span class="label">Data and Databases:</span> PostgreSQL, SQL, relational data modeling, ETL patterns</li>
+          <li>
+            <span class="label">Data and Databases:</span> PostgreSQL, SQL, relational data modeling,
+            ETL patterns
+          </li>
           <li>
             <span class="label">DevOps and Automation:</span> Docker, GitHub Actions, CI pipelines,
             structured logging, monitoring basics
+          </li>
+          <li>
+            <span class="label">AI and LLMs:</span> LLM API usage, evaluation and prompt iteration,
+            summarization and semantic search prototypes
           </li>
         </ul>
       </section>
@@ -72,47 +78,54 @@
             <p class="stack">Python · GitHub Actions · Docker · JSON · ETL · Structured Logging · Data Validation</p>
           </div>
           <p class="blurb">
-            Open-source tooling that addresses a core civic data problem: legislative data is fragmented,
-            difficult to track over time, and often dependent on centralized platforms.
+            Open-source civic data tooling that addresses a core problem in legislative data: it is fragmented,
+            difficult to track over time, and often dependent on centralized platforms that may be shut down or abandoned.
           </p>
           <ul>
             <li>
-              Built automated ETL pipelines that transform Open States legislative data into normalized,
-              append-only JSON artifacts for auditing and long-term analysis.
+              Designed and implemented automated ETL pipelines that transform raw Open States legislative data into
+              normalized, append-only JSON artifacts suitable for long-term analysis, auditing, and replay.
             </li>
             <li>
-              Designed reproducible, containerized workflows across jurisdictions and sessions, enabling
-              consistent data ingestion and integration.
+              Built workflows around reproducibility and decentralization using timestamped artifacts, structured logs,
+              and deterministic runs so datasets can be independently cloned, verified, and queried by others.
             </li>
             <li>
-              Implemented Dockerized pipelines and GitHub Actions schedules to support repeatable
-              deployments and reliable updates.
+              Standardized ETL patterns across jurisdictions and legislative sessions, reducing duplicated effort for civic
+              groups, researchers, and educators without dedicated data infrastructure.
             </li>
             <li>
-              Collaborated with cross-functional civic tech contributors to refine data models and support
-              analytics and public-facing applications.
+              Implemented Docker-based runs and GitHub Actions schedules to support transparent, repeatable updates and
+              reduce manual intervention.
+            </li>
+            <li>
+              Worked with civic technologists and researchers to refine data structures and tooling based on downstream
+              analytics, tagging, and public-facing use rather than theoretical schemas.
             </li>
           </ul>
         </article>
 
         <article class="item">
           <div class="section-card">
-            <h3>SciScope</h3>
-            <p class="stack">Node.js · Express · PostgreSQL · Objection.js · Redis · Jest · Winston · Passport · JWT · node-cache</p>
+            <h3>Artisan Marketplace</h3>
+            <p class="stack">Ruby on Rails · PostgreSQL · RSpec · Capybara · SimpleCov · FactoryBot · BCrypt</p>
           </div>
-          <p class="blurb">A RESTful API for science news aggregation with user authentication, caching, and analytics.</p>
+          <p class="blurb">A multi-role e-commerce platform supporting distinct user experiences for admins and artisans.</p>
           <ul>
             <li>
-              Designed and built a RESTful API using Express.js and PostgreSQL to support authenticated
-              users, caching, and analytics.
+              Implemented role-based authentication and authorization with a unified login flow, balancing simplicity
+              with clear permission boundaries.
             </li>
             <li>
-              Designed relational data schema and implemented advanced SQL queries with Objection.js,
-              including pagination and analytics.
+              Developed internal admin workflows to safely manage user state and business rules without direct database
+              intervention.
             </li>
             <li>
-              Implemented secure authentication and authorization with Passport.js and JWT tokens,
-              including session management and role-based access controls.
+              Designed a relational schema and implemented discount logic using Active Record scopes and queries.
+            </li>
+            <li>
+              Organized the application with namespaced routes and comprehensive test coverage to support long-term
+              maintainability and iteration.
             </li>
           </ul>
         </article>
@@ -125,16 +138,19 @@
           <p class="blurb">REST API exposing structured, relational city data via modular, testable endpoints.</p>
           <ul>
             <li>
-              Built RESTful API with TypeScript and Express, applying the DAO pattern and modular service
-              design to refactor an existing codebase into a clean, scalable backend system.
+              Built RESTful API with TypeScript and Express, applying the DAO pattern and modular service design to
+              refactor an existing codebase into a clean, scalable backend system.
             </li>
             <li>
-              Modeled complex city relationships using PostgreSQL and Objection.js, optimizing queries for
-              fast and reliable data access.
+              Modeled complex city relationships using PostgreSQL and Objection.js, optimizing queries for fast and
+              reliable data access.
             </li>
             <li>
-              Wrote Swagger documentation and a full Jest test suite to ensure endpoint accuracy and
-              support long-term developer usability.
+              Wrote Swagger documentation and a full Jest test suite to ensure endpoint accuracy and support long-term
+              developer usability.
+            </li>
+            <li>
+              Implemented request validation and error handling to ensure consistent API behavior across endpoints.
             </li>
           </ul>
         </article>
@@ -150,13 +166,12 @@
           </div>
           <ul>
             <li>
-              Designed and delivered inclusive science curricula in IB and project-based environments in
-              Mexico, China, and the U.S., helping students build analytical thinking and real-world
-              problem-solving skills.
+              Designed and delivered inclusive science curricula in IB and project-based environments in Mexico, China,
+              and the U.S., helping students build analytical thinking and real-world problem-solving skills.
             </li>
             <li>
-              Analyzed student performance data, tested instructional approaches, and iterated on
-              materials based on outcomes, mirroring iterative development and feedback cycles.
+              Analyzed student performance data, tested instructional approaches, and iterated on materials based on
+              outcomes, mirroring iterative development and feedback cycles.
             </li>
           </ul>
         </article>
@@ -168,16 +183,16 @@
           </div>
           <ul>
             <li>
-              Led a solar energy initiative that distributed over 500,000 lights across Kenya, improving
-              daily life for more than 2 million people.
+              Led a solar energy initiative that distributed over 500,000 lights across Kenya, improving daily life for
+              more than 2 million people.
             </li>
             <li>
-              Managed a 28-person team across franchise operations and a local manufacturing plant,
-              overseeing planning, logistics, and reporting.
+              Managed a 28-person team across franchise operations and a local manufacturing plant, overseeing planning,
+              logistics, and reporting.
             </li>
             <li>
-              Worked directly with local communities to understand constraints, translate needs into
-              workable plans, and build systems that supported reliable delivery and long-term adoption.
+              Worked directly with local communities to understand constraints, translate needs into workable plans, and
+              build systems that supported reliable delivery and long-term adoption.
             </li>
           </ul>
         </article>
@@ -185,20 +200,34 @@
 
       <section class="section" aria-label="Education and Certifications">
         <h2>Education &amp; Certifications</h2>
-        <ul class="edu">
-          <li>
-            <span class="label">AWS Certified Cloud Practitioner</span> | Amazon Web Services
-            <span class="meta">07/2025</span>
-          </li>
-          <li>
-            <span class="label">Back End Engineering Certificate</span> | Turing School of Software Design
-            <span class="meta">06/2022</span>
-          </li>
-          <li>
-            <span class="label">Bachelor of Science with Honors in Biology Education</span> | Kennesaw State University
-            <span class="meta">05/2015</span>
-          </li>
-        </ul>
+        <div class="edu-grid" role="list">
+          <div class="edu-block" role="listitem">
+            <h3 class="edu-title">Education</h3>
+            <ul class="edu">
+              <li>
+                <span class="label">Bachelor of Science with Honors in Biology Education</span> | Kennesaw State University
+                <span class="meta">05/2015</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="edu-block" role="listitem">
+            <h3 class="edu-title">Certifications</h3>
+            <ul class="edu">
+              <li>
+                <span class="label">AWS Certified Cloud Practitioner</span> | Amazon Web Services
+                <span class="meta">07/2025</span>
+              </li>
+              <li>
+                <span class="label">Back End Engineering Certificate</span> | Turing School of Software Design
+                <span class="meta">06/2022</span>
+              </li>
+              <li>
+                <span class="label">Certificate in Global Affairs</span> | New York University
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
